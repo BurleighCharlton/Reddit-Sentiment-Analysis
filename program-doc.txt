@@ -1,0 +1,24 @@
+
+Outline of program control flow:
+
+Program segments:
+
+Filesys:
+Utility to handle however we decide to set up our filesystem for data. 
+
+Reddit checking:
+Utility to iterate over all comments made on a post that were made within
+a given period of the post being made and that can be associated with one or
+more tickers. 
+24 or 36 hours seems like a decent default period. 
+We save all comments under a ticker they are associated with along with the
+date of the post. 
+
+SA:
+Run SA on Reddit data before saving it
+
+Stock checking:
+Seperate utility from the reddit one. Takes data from the reddit utility
+and finds data for stocks in the week following that data. Looks for
+correlation. We can figure this out once the reddit part is working. 
+
